@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Retour sur HTML5 et CSS3</title>
+		<link rel="stylesheet" href="stylesheet.css" />
+	</head>
+	<body>
+		<header>
+			<img src="Images/htmlAnimated.gif" border="0" alt="" width="100" height="100">
+			<h1 class="disp1H1">RETOUR SUR HTML</h1>
+			<img src="Images/search.png" alt="loupe" title="Rechercher" width="32" height="32"/>
+			<p class="disp1p">
+				Recherche
+			</p>
+			<img src="Images/loginButton.png" alt="connexion" title="Se connecter" width="40" height="40"/>
+			<p class="disp1p">
+				Connexion
+			</p>
+
+		</header>
+		<nav class="dispNav">
+			<ol class="dispUl1">
+				<li>
+					<a href="index.html">Accueil</a>
+				</li>
+				<li>
+					<a href="fonctionnement.html">Les fondations</a>
+				</li>
+				<li>
+					<a href="premierePage.html">Première page</a>
+				</li>
+				<li>
+					<a href="organiserTexte.html">Le texte</a>
+				</li>
+				<li>
+					<a href="liens.html">Les liens</a>
+				</li>
+				<li>
+					<a href="images.html">Les images</a>
+				</li>
+				<li>
+					<a href="structure.html">La structure</a>
+				</li>
+			</ol>
+		</nav>
+		<section>
+			<h2>Chapitre 3 - Organiser son texte</h2>
+			<article>
+				<h3>Section 1 - Les paragraphes</h3>
+				<p>
+					La plupart du temps, lorsqu'on écrit du texte dans une page web, on le fait à l'intérieur de paragraphes. Le langage HTML propose justement la balise &lsaquo;p&rsaquo;
+					pour délimiter les paragraphes.
+					<br/>
+					&lsaquo;p&rsaquo; Bonjour et vive la pastaga&lsaquo;/p&rsaquo;
+					<br/>
+					Comme je vous l'ai dit au chapitre précédent, on écrit le contenu du site web entre les balises &lsaquo;body&rsaquo; &lsaquo;/body&rsaquo; .Il nous suffit donc de mettre notre paragraphe entre ces deux balises et nous aurons
+					enfin notre première vraie page web avec du texte !
+				</p>
+				<img src="Images/ParagrapheHTML.jpg" alt="Paragraphe" title="Paragraphe"/>
+				<h4>Sauter une ligne</h4>
+				<p>
+					En fait, si vous voulez écrire un deuxième paragraphe, il vous suffit d'utiliser une deuxième balise &lsaquo;p&rsaquo; .
+				</p>
+				<p>
+					Oui, mais si je veux juste aller à la ligne dans un paragraphe et non pas sauter une ligne ?
+					Eh bien devinez quoi : il existe une balise « Aller à la ligne » !
+					C'est une balise orpheline qui sert juste à indiquer qu'on doit aller à la ligne : &lsaquo;br/&rsaquo;
+					<br />
+					Vous devez obligatoirement la mettre à l'intérieur d'un paragraphe.
+				</p>
+				<img src="Images/BalisesPetBR.jpg" alt="BalisesParagraphes" title="BalisesParagraphes"/>
+			</article>
+			<article>
+				<h3>Section 2 - Les titres</h3>
+				<p>
+					En HTML, on est verni, on a le droit d'utiliser six niveaux de titres différents.
+				</p>
+				<p>
+					&lsaquo;H1&rsaquo; &lsaquo;/H1&rsaquo; : signifie « titre très important ». En général, on s'en sert pour afficher le titre de la page au début de celle-ci.
+				</p>
+				<p>
+					&lsaquo;H2&rsaquo; &lsaquo;/H2&rsaquo;  : signifie « titre important ».
+				</p>
+				<p>
+					&lsaquo;H3&rsaquo; &lsaquo;/H3&rsaquo;  : pareil, c'est un titre un peu moins important (on peut dire un « sous-titre » si vous voulez).
+				</p>
+				<p>
+					&lsaquo;H4&rsaquo; &lsaquo;/H4&rsaquo;  : titre encore moins important.
+				</p>
+				<p>
+					&lsaquo;H5&rsaquo; &lsaquo;/H5&rsaquo;  : titre pas important.
+				</p>
+				<p>
+					&lsaquo;H6&rsaquo; &lsaquo;/H6&rsaquo;  : titre vraiment, mais alors là vraiment pas important du tout.
+				</p>
+			</article>
+			<article>
+				<h3>Section 3 - La mise en valeur</h3>
+				<h4>Sous-section 1 - Mettre un peu en valeur</h4>
+				<p>
+					Pour mettre un peu en valeur votre texte, vous devez utiliser la balise &lsaquo;em&rsaquo; &lsaquo;/em&rsaquo; .
+					&lsaquo;em&rsaquo; a pour conséquence de <em>mettre le texte en italique</em>.
+				</p>
+
+				<h4>Sous-section 2 - Mettre bien en valeur</h4>
+				<p>
+					Pour mettre un texte bien en valeur, on utilise la balise &lsaquo;strong&rsaquo; qui signifie « fort », ou « important ». En utilisant &lsaquo;strong&rsaquo; <strong>le texte s'affichera en gras</strong>.
+				</p>
+				<h4>Sous-section 3 - Marquer le texte</h4>
+				<p>
+					La balise &lsaquo;mark&rsaquo; permet de
+					<mark>
+						faire ressortir visuellement une portion de texte.
+					</mark>
+					Par défaut, &lsaquo;mark&rsaquo; a pour effet de surligner le texte.
+				</p>
+				<h4>Sous-section 4 - Souffler n'est pas HTML</h4>
+				<p>
+					Il ne faut pas confondre les balises HTML de mise en valeur et la gestion de l'apparence avec CSS. Les balises de mise en valeur signifient : A toi Navigateur,
+					je veux indiquer que cette portion de texte est importante. <strong>L'intérêt des balises de mise en valeur est qu'elles participent à l'amélioration du référencement d'un site.</strong>
+				</p>
+			</article>
+			<article>
+				<h3>Section 4 - Les listes</h3>
+				<p>
+					Il existe 2 types de listes en HTML :
+					<ul>
+						<li>
+							Les listes non ordonnées
+						</li>
+						<li>
+							Les listes ordonnées
+						</li>
+					</ul>
+				</p>
+				<h4>Sous-section 1 - Les listes non ordonnées</h4>
+				<p>
+					Une liste ordonnée est un système qui nous permet de créer une liste d'éléments sans notion d'ordre (il n'y a pas de « premier » ni de « dernier »). Créer une liste non ordonnée est très simple. Il suffit d'utiliser
+					la balise &lsaquo;ul&rsaquo; que l'on referme un peu plus loin avec &lsaquo;/ul&rsaquo;
+				</p>
+				<p>
+					Et maintenant, voilà ce qu'on va faire : on va écrire chacun des éléments de la liste entre deux balises &lsaquo;li&rsaquo; et &lsaquo;/li&rsaquo; .
+				</p>
+				<img src="Images/listeNonOrdonnee.png" alt="ListeNonOrdonnée" title="Liste non ordonnée"/>
+				<h4>Sous-section 2 - Les listes ordonnées</h4>
+				<p>
+					Une liste ordonnée fonctionne de la même façon, seule une balise change : il faut remplacer &lsaquo;ul&rsaquo;
+					et &lsaquo;/ul&rsaquo; par &lsaquo;ol&rsaquo; et &lsaquo;/ol&rsaquo; . On obtient alors une liste semblable :
+				</p>
+				<img src="Images/listeOrdonnee.png" alt="ListeOrdonnée" title="Liste ordonnée"/>
+				<h1>Ma journée</h1>
+
+				<ol>
+					<li>
+						Je me lève.
+					</li>
+					<li>
+						Je mange et je bois.
+					</li>
+					<li>
+						Je retourne me coucher.
+					</li>
+				</ol>
+			</article>
+		</section>
+
+		<footer>
+			<p class="centerP">
+				<a href="maito:l_m1@orange.fr">Courriel</a> Téléphone : 06 45 28 14 94 Adresse : 239, lieu dit Rigou 46 090 Le Montat
+			</p>
+			<p class="centerP">
+				<a href="">Mentions légales</a> Blackbird Production 2017
+			</p>
+		</footer>
+	</body>
+</html>

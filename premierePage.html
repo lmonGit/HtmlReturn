@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Retour sur HTML5 et CSS3</title>
+		<link rel="stylesheet" href="stylesheet.css" />
+	</head>
+	<body>
+		<header>
+			<img src="Images/htmlAnimated.gif" border="0" alt="" width="100" height="100">
+			<h1 class="disp1H1">RETOUR SUR HTML</h1>
+			<img src="Images/search.png" alt="loupe" title="Rechercher" width="32" height="32"/>
+			<p class="disp1p">
+				Recherche
+			</p>
+			<img src="Images/loginButton.png" alt="connexion" title="Se connecter" width="40" height="40"/>
+			<p class="disp1p">
+				Connexion
+			</p>
+
+		</header>
+		<nav class="dispNav">
+			<ol class="dispUl1">
+				<li>
+					<a href="index.html">Accueil</a>
+				</li>
+				<li>
+					<a href="fonctionnement.html">Les fondations</a>
+				</li>
+				<li>
+					<a href="premierePage.html">Première page</a>
+				</li>
+				<li>
+					<a href="organiserTexte.html">Le texte</a>
+				</li>
+				<li>
+					<a href="liens.html">Les liens</a>
+				</li>
+				<li>
+					<a href="images.html">Les images</a>
+				</li>
+				<li>
+					<a href="structure.html">La structure</a>
+				</li>
+			</ol>
+		</nav>
+		<section>
+			<h2>Chapitre 2 - Ma première page Web en HTML</h2>
+			<article>
+				<h3>Section 1 - Créer une page Web avec l'éditeur</h3>
+				<p>
+					Pour pouvoir créer un site, il faut d'abord créer son ossature : c'est un fichier HTML. Pour créer un fichier HTML, il faut ouvrir un éditeur
+					de texte tel que Sublime Text. On y écrit du texte. Puis on fait : Fichier>Enregistrer. Ensuite, on donne un nom quelconque au fichier HTML, mais sutout on lui donne
+					une extension .html. C'est l'extension .html qui indique au navigateur qu'il pourra interprété le fichier.html.Il est préférable
+					de sauvegarder les sources sur un disque dur externe, une clé USB ou encore le Cloud comme onedrive de Microsoft.
+				</p>
+				<p>
+					Malheureusement, se cantonner à écrire du texte pour créer un site web, ne suffira pas. En plus de ce texte, il faut aussi écrire ce qu'on appelle des balises, qui vont donner des instructions
+					à l'ordinateur comme « aller à la ligne », « afficher une image », etc.
+				</p>
+
+			</article>
+			<aside>
+				<h3>Sublime text 3, l'éditeur le plus en vu</h3>
+				<img class="imgDisplayed1"src="Images/sublimeText.png" alt="Sublimetext" title="L'éditeur Sublime Text 3"/>
+			</aside>
+
+		</section>
+		<section>
+			<article>
+				<h3>Section 2 - Les balises et leurs attributs</h3>
+				<h4>Sous-section 1 - Les balises</h4>
+				<!--Aller sur http://www.commentcamarche.net/contents/489-caracteres-speciaux-html pour utilisation caractères spéciaux -->
+				<!-- G utilisé &lsaquo; et &rsaquo; pour cela -->
+				<p>
+					Celles-ci sont invisibles à l'écran pour vos visiteurs, mais elles permettent à l'ordinateur de comprendre ce qu'il doit afficher.
+					Les balises se repèrent facilement. Elles sont entourées de « chevrons », c'est-à-dire des symboles &lsaquo; et &rsaquo; comme ceci :&lsaquo; balise &rsaquo; .On distingue deux types de
+					balises : les balises en paires et les balises orphelines.
+				</p>
+				<h5>Les balises en paires</h5>
+				<p>
+					Elles s'ouvrent, contiennent du texte, et se ferment plus loin. Voici à quoi elles ressemblent :
+					&lsaquo;titre&rsaquo; Ceci est un titre &lsaquo;/titre&rsaquo;
+				</p>
+				<h5>Les balises orphelines</h5>
+				<p>
+					Ce sont des balises qui servent le plus souvent à insérer un élément à un endroit précis (par exemple une image).Une balise orpheline s'écrit comme ceci :
+					&lsaquo; image /&rsaquo;
+				</p>
+				<h4>Sous-section 2 - Les attributs</h4>
+				<p>
+					Les attributs sont un peu les options des balises. Ils viennent les compléter pour donner des informations supplémentaires. L'attribut se place après le nom de la balise ouvrante et a le plus souvent
+					une valeur, comme ceci : &lsaquo; balise attribut="valeur"&rsaquo; exemple : &lsaquo; image nom="photo.jpg"/&rsaquo;
+				</p>
+				<p>
+					Dans le cas d'une balise fonctionnant « par paire », on ne met les attributs que dans la balise ouvrante et pas dans la balise fermante. Par exemple, ce code indique que la citation est de Neil Armstrong
+					et qu'elle date du 21 Juillet 1969 :
+					&lsaquo; citation&rsaquo; auteur="Neil Armstrong" date="21/07/1969">
+					C'est un petit pas pour l'homme, mais un bond de géant pour l'humanité.
+					&lsaquo; /citation&rsaquo;
+				<p>
+					Toutes les balises que nous venons de voir sont fictives. Les vraies balises ont des noms en anglais (eh oui !), nous allons les découvrir dans la suite de ce cours.
+				</p>
+			</article>
+		</section>
+		<section>
+			<article>
+				<h3>Section 3 - Structure de base d'une page HTML5</h3>
+				<img src="Images/StructureHTML.jpg" alt="StructurePageHtml" title="Structure d'une page HTML"/>
+				<h4>Sous-section 1 - Le doctype</h4>
+				<p>
+					&lsaquo; !DOCTYPE html&rsaquo;
+				</p>
+				<p>
+					La toute première ligne s'appelle le doctype. Elle est indispensable car c'est elle qui indique qu'il s'agit bien d'une page web HTML.
+					<br/>
+					Ce n'est pas vraiment une balise comme les autres (elle commence par un point d'exclamation). Vous pouvez considérer que c'est un peu l'exception qui confirme la règle.
+				</p>
+				<h4>Sous-section 2 - La balise &lsaquo; /html&rsaquo;</h4>
+				<p>
+					C'est la balise principale du code. Elle englobe tout le contenu de votre page.
+				</p>
+				<h4>Sous-section 3 - L'en-tête&lsaquo; head&rsaquo; et le corps &lsaquo; body&rsaquo;</h4>
+				<p>
+					L'en-tête : cette section donne quelques informations générales sur la page comme son titre, l'encodage (pour la gestion des caractères spéciaux), etc. Cette section
+					est généralement assez courte. Les informations que contient l'en-tête ne sont pas affichées sur la page, ce sont simplement des informations générales à destination de l'ordinateur.
+				</p>
+				<p>
+					Le corps : c'est là que se trouve la partie principale de la page. Tout ce que nous écrirons ici sera affiché à l'écran.
+				</p>
+				<h4>Sous-section 4 - L'encodage (charset)</h4>
+				<img src="Images/Charset.jpg" alt="Encodage" title="Encodage"/>
+				<p>
+					Cette balise indique l'encodage utilisé dans votre fichier.html.
+					Sans rentrer dans les détails, car cela pourrait vite devenir compliqué, l'encodage indique la façon dont le fichier est enregistré. C'est lui qui détermine comment les caractères spéciaux
+					vont s'afficher (accents, idéogrammes chinois et japonais, caractères arabes, etc.).
+				</p>
+				<h4>Sous-section 5 -Le titre principal de la page</h4>
+				<p>
+					&lsaquo;title&rsaquo; C'est le titre de votre page, probablement l'élément le plus important ! Toute page doit avoir un titre qui décrit ce qu'elle contient.
+					Il est conseillé de garder le titre assez court (moins de 100 caractères en général).
+					<br/>
+					Le titre ne s'affiche pas dans votre page mais en haut de celle-ci (souvent dans l'onglet du navigateur).Il faut savoir que le titre apparaît aussi dans les résultats de recherche,
+					comme sur Google. Autant vous dire que bien choisir son titre est important !
+				</p>
+			</article>
+		</section>
+		<section>
+			<article>
+				<h3>Section 4 - Les commentaires</h3>
+				<p>
+					Un commentaire en HTML est un texte qui sert simplement de mémo. Il n'est pas affiché, il n'est pas lu par l'ordinateur, cela ne change rien à l'affichage de la page.
+				</p>
+				<p>
+					&lsaquo; --Ceci est un commentaire--&rsaquo; Tout le monde peut voir vos commentaires… et tout votre code HTML ! Par conséquent, ne mettez pas d'informations sensibles comme des mots de passe dans les commentaires…
+				</p>
+			</article>
+		</section>
+
+		<footer>
+			<p class="centerP">
+				<a href="maito:l_m1@orange.fr">Courriel</a> Téléphone : 06 45 28 14 94 Adresse : 239, lieu dit Rigou 46 090 Le Montat
+			</p>
+			<p class="centerP">
+				<a href="">Mentions légales</a> Blackbird Production 2017
+			</p>
+		</footer>
+	</body>
+</html>

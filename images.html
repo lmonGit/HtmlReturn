@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Retour sur HTML5 et CSS3</title>
+		<link rel="stylesheet" href="stylesheet.css" />
+	</head>
+	<body>
+		<header>
+			<img src="Images/htmlAnimated.gif" border="0" alt="" width="100" height="100">
+			<h1 class="disp1H1">RETOUR SUR HTML</h1>
+			<img src="Images/search.png" alt="loupe" title="Rechercher" width="32" height="32"/>
+			<p class="disp1p">
+				Recherche
+			</p>
+			<img src="Images/loginButton.png" alt="connexion" title="Se connecter" width="40" height="40"/>
+			<p class="disp1p">
+				Connexion
+			</p>
+
+		</header>
+		<nav class="dispNav">
+			<ol class="dispUl1">
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="fonctionnement.html">Les fondations</a></li>
+				<li><a href="premierePage.html">Première page</a></li>
+				<li><a href="organiserTexte.html">Le texte</a></li>
+				<li><a href="liens.html">Les liens</a></li>
+				<li><a href="images.html">Les images</a></li>
+				<li><a href="structure.html">La structure</a></li>
+			</ol>
+		</nav>
+		<section>
+			<h2>Chapitre 5 - Les images</h2>
+			<article>
+				<h3>Section 1 - Les différents formats d'images</h3>
+				<h4>Sous-section  1 : Le JPEG</h4>
+				<p>
+					Les images au format JPEG (Joint Photographic Expert Group) sont très répandues sur le Web. Ce format est
+					conçu pour réduire le poids des photos (c'est-à-dire la taille du fichier associé), qui peuvent comporter plus de 16
+					millions de couleurs différentes. Les images JPEG sont enregistrées avec l'extension.jpg ou.jpeg.
+				</p>
+				<h4>Sous-section  2 : Le PNG</h4>
+				<p>
+					Le format PNG (Portable Network Graphics) est le plus récent de tous. Ce format est adapté à la plupart des graphiques
+					(je serais tenté de dire « à tout ce qui n'est pas une photo »). Le PNG a deux gros avantages : il peut être rendu transparent
+					et il n'altère pas la qualité de l'image. Le PNG existe en deux versions, en fonction du nombre de couleurs que doit
+					comporter l'image :
+					<ul>
+						<li>
+							PNG 8 bits : 256 couleurs
+						</li>
+						<li>
+							PNG 24 bits : 16 millions de couleurs (autant qu'une image JPEG).
+						</li>
+					</ul>
+				</p>
+				<h4>Sous-section  3 : Le GIF</h4>
+				<p>
+					Le format GIF est limité à 256 couleurs. Néanmoins, le GIF conserve un certain avantage que le PNG n'a pas : il peut être animé.
+				</p>
+				<div style="text-align:center">
+					<img src="Images/femmeModele.gif" alt="femmeModele" title="Exemple d'une femme modèle" width="300"/>
+				</div>
+				<h4>Sous-section  4 : Il existe un format adapté à chaque image</h4>
+				<ul>
+					<li>
+						Une photo : utilisez un JPEG.
+					</li>
+					<li>
+						N'importe quel graphique avec peu de couleurs (moins de 256) : utilisez un PNG 8 bits ou éventuellement un GIF.
+					</li>
+					<li>
+						N'importe quel graphique avec beaucoup de couleurs : utilisez un PNG 24 bits.
+					</li>
+					<li>
+						Une image animée : utilisez un GIF animé.
+					</li>
+				</ul>
+				<h4>Sous-section  5 : Les erreurs à éviter</h4>
+				<ul>
+					<li>
+						Bannissez les autres formats tels que bitmap.
+					</li>
+					<li>
+						Choisissez bien le nom de votre image exemple: mon_image.png .
+					</li>
+				</ul>
+			</article>
+			<article>
+				<h3>Section 2 - Insérer une image</h3>
+				<h4>Sous-section  1 : Insertion d'une image</h4>
+				<p>
+					Quelle est la fameuse balise qui va nous permettre d'insérer une image ? Il s'agit de…  &lsaquo; img/&rsaquo; ! La balise doit être accompagnée de deux attributs obligatoires :
+					<ul>
+						<li>
+							src  : il permet d'indiquer où se trouve l'image que l'on veut insérer. Vous pouvez soit mettre un chemin absolu (ex. :  http://www.site.com/fleur.png),
+							soit mettre le chemin en relatif (ce qu'on fait le plus souvent). Ainsi, si votre image est dans un sous-dossier  images,
+							vous devrez taper :  src="images/fleur.png"
+						</li>
+						<li>
+							alt  : cela signifie « texte alternatif ». On doit toujours indiquer un texte alternatif à l'image, c'est-à-dire un court texte qui décrit ce que
+							contient l'image. Ce texte sera affiché à la place de l'image si celle-ci ne peut pas être téléchargée (cela arrive), ou dans les navigateurs de personnes
+							handicapées (non-voyants) qui ne peuvent malheureusement pas « voir » l'image.
+						</li>
+					</ul>
+				</p>
+				<p>
+					Les images doivent se trouver obligatoirement à l'intérieur d'un paragraphe ou d'un div
+				</p>
+				<p>
+
+					<h4>Sous-section  2 : Ajouter une infobulle</h4>
+					<div style="text-align:left">
+						<img src="Images/imageEtTitle.png" alt="infobulleImage" title="Infobulle d'une image" />
+					</div>
+				<p>
+					L'attribut permettant d'afficher une bulle d'aide est le même que pour les liens : il s'agit de  title. Cet attribut est facultatif (contrairement à  alt).
+				</p>
+				<h4>Sous-section  3 : Miniature cliquable</h4>
+				<p>
+					Si votre image est très grosse, il est conseillé d'en afficher la miniature sur votre site. Ajoutez ensuite un lien sur cette miniature pour que vos visiteurs puissent afficher
+					l'image en taille originale.
+					<br />
+					De nombreux sites permettent de redimensionner des images, comme ResizeImage.net par exemple. Je vais ainsi disposer de deux versions de ma photo,
+					comme à la figure suivante) : la miniature et l'image d'origine.
+				</p>
+				<div style="text-align:left">
+					<img src="Images/miniature.png" alt="Miniature" title="Créer une miniature" />
+				</div>
+				<p>
+					Liv Tyler : Portrait
+				</p>
+				<div style="text-align:center">
+					<a href="Images/livTyler.jpg"> <img src="Images/miniLivTtyler.jpg" alt="LivTyler" title="Cliquer pour agrandir la photo" /></a>
+				</div>
+			</article>
+			<article>
+				<h3>Section 3 - Les figures</h3>
+				<h4>Sous-section  1 : Création d'une figure</h4>
+				<p>
+					Au cours de la lecture de ce livre, vous avez déjà rencontré plusieurs fois des figures. Ce sont des éléments qui viennent enrichir le texte pour compléter
+					les informations de la page.
+					<br/>
+					Les figures peuvent être de différents types :
+					<ul>
+						<li>
+							images
+						</li>
+						<li>
+							code source
+						</li>
+						<li>
+							citations, etc...
+						</li>
+
+					</ul>
+				</p>
+				<div style="text-align:left">
+					<img src="Images/figures.png" alt="figures" title="Utiliser des figures" />
+				</div>
+
+				<h4>Sous-section  2 : Bien comprendre le rôle des figures</h4>
+				<p>
+					Je ne vois pas vraiment de changement. Quand dois-je placer mon image dans un paragraphe et quand dois-je la
+					placer dans une figure ?
+				</p>
+				<div style="text-align:left">
+					<img src="Images/RaisonFigure.png" alt="raisonFigure" title="Pourquoi une figure ?" />
+				</div>
+			</article>
+		</section>
+		
+		<footer>
+		<p class="centerP">
+			<a href="maito:l_m1@orange.fr">Courriel</a> Téléphone : 06 45 28 14 94 Adresse : 239, lieu dit Rigou 46 090 Le Montat 
+		</p>
+		<p class="centerP">
+			<a href="">Mentions légales</a> Blackbird Production 2017
+		</p>
+	</footer>	
+	</body>
+</html>

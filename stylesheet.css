@@ -1,0 +1,136 @@
+/*Mon fichier de style*/
+/*préférer un fond noir ou gris pour éviter la fatigue visuelle*/
+body {
+	background-color: rgb(50,50,50);
+}
+p, h1, h2, h3, h4, h5, h6, ul, ol {
+	color: rgb(252,214,124);
+	font-size: 1.2em;
+	margin-left: 20px;
+}
+a {
+	color: orange;
+}
+.centerP{
+	margin-left: auto;
+    margin-right: auto;
+    width:40em;
+}
+.disp1H1 {
+	display: inline;
+	font-size: 8em;
+}
+.disp1p {
+	display: inline;
+	font-size: 2em;
+}
+article {
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 1200px;
+	display: inline-block;
+	border: 3px orange solid;
+	border-radius: 10px;
+}
+.dispArticle1 {
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 1550px;
+	display: inline-block;
+	border: 3px orange solid;
+	border-radius: 10px;
+}
+
+aside {
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 320px;
+	height: 700px;
+	display: inline-block;
+	vertical-align: top;
+	border: 3px orange solid;
+	border-radius: 10px;
+}
+section {
+	margin-left: 220px;
+	margin-bottom: 20px;
+	width: 1600px;
+	border: 3px orange solid;
+	border-radius: 10px;
+}
+nav {
+	font-size: 0.9em;
+	margin-left: 5px;
+	float: left;
+	width: 180px;
+	height: 600px;
+	border: 3px orange solid;
+	border-radius: 10px;
+}
+
+footer {
+	margin-left: 220px;
+	width: 1600px;
+	border: 3px orange solid;
+	border-radius: 10px;
+}
+table
+{
+    border-collapse: collapse; /* Les bordures du tableau seront collées (plus joli) */
+		margin-left:20px;
+		margin-bottom:20px;
+}
+td
+{
+		text-align: center;
+    border: 1px solid orange;
+		color:rgb(252,214,124);
+}
+
+th
+{
+			color:white;
+}
+caption
+{
+			font-size:1.2em;
+			font-style:italic;
+			color:white;
+}
+/*Centrer une image */
+.imgDisplayed1 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+.dispNav {
+	font-size: 0.8em;
+	color: rgb(26,214,73);
+	margin-left: 5px;
+	float: left;
+	width: 180px;
+	height: 600px;
+	border: 3px orange solid;
+	border-radius: 10px;
+}
+.dispUl1 {
+	margin-left:3px;
+	color: orange;
+
+}
+img{
+	margin-bottom:20px;
+	margin-left:20px;
+}
+footer{
+	font-size:0.7em;
+}
+div{
+	text-align:left;
+}
+.toTheBottom{
+		caption-side:bottom;
+}

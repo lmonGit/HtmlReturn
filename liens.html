@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Retour sur HTML5 et CSS3</title>
+		<link rel="stylesheet" href="stylesheet.css" />
+	</head>
+	<body>
+		<header>
+			<img src="Images/htmlAnimated.gif" border="0" alt="" width="100" height="100">
+			<h1 class="disp1H1">RETOUR SUR HTML</h1>
+			<img src="Images/search.png" alt="loupe" title="Rechercher" width="32" height="32"/>
+			<p class="disp1p">
+				Recherche
+			</p>
+			<img src="Images/loginButton.png" alt="connexion" title="Se connecter" width="40" height="40"/>
+			<p class="disp1p">
+				Connexion
+			</p>
+
+		</header>
+		<nav class="dispNav">
+			<ol class="dispUl1">
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="fonctionnement.html">Les fondations</a></li>
+				<li><a href="premierePage.html">Première page</a></li>
+				<li><a href="organiserTexte.html">Le texte</a></li>
+				<li><a href="liens.html">Les liens</a></li>
+				<li><a href="images.html">Les images</a></li>
+				<li><a href="structure.html">La structure</a></li>
+			</ol>
+		</nav>
+		<section>
+			<h2>Chapitre 4 - Créer des liens</h2>
+			<article>
+				<h3>Section 1 - Un lien vers un autre site</h3>
+
+				<p>
+					Pour faire un lien, la balise que nous allons utiliser est très simple à retenir : &lsaquo;a&rsaquo; .Il faut cependant
+					lui ajouter un attribut, href, pour indiquer vers quelle page le lien doit conduire. pour créer un lien vers le site du Monde. Il faut
+					écrire le code suivant :
+					&lsaquo; a href="http://www.lemonde.fr/"&rsaquo; Le Monde &lsaquo;/a&rsaquo;
+				</p>
+				<p>
+					Ce qui donne <a href="http://www.lemonde.fr/" title="Aller sur le site du monde">Le Monde</a>. Les liens que nous venons de voir sont appelés
+					liens absolus car on indique l'adresse complète.
+				</p>
+
+				<h3>Section 2 - Un lien vers une autre page de son site</h3>
+				<h4>Sous-section 1 - Deux pages situées dans un même dossier</h4>
+				<p>
+					Pour pointer vers une autre page du même dossier, il suffit d'écrire le nom du fichier avec son extension. Si le fichier pointé est biographie.html, on écrira
+					<br>
+					&lsaquo; a href="biographie.html"&rsaquo; Ma biographie &lsaquo;/a&rsaquo; soit :
+				</p>
+				<p>
+					<a href="biographie.html" title="Ma page Biographie">Ma biographie</a>
+				</p>
+			</article>
+			<article>
+				<h4>Sous-section 2 - Deux pages situées dans des dossiers différents</h4>
+				<p>
+					Pour pointer vers une autre page dans un dossier différent, il faut écrire le dossier/le nom du fichier avec son extension. Si le fichier pointé est biographie.html, on écrira
+					<br>
+					&lsaquo; a href="Biographie/biographie.html"&rsaquo; Ma biographie &lsaquo;/a&rsaquo; soit :
+				</p>
+				<p>
+					<a href="Biographie/biographie.html" title="Ma page Biographie dans le dossier Biographie">Ma biographie dans le dosier Biographie</a>
+				</p>
+			</article>
+			<article>
+				<h3>Section 3 - Un lien vers une ancre</h3>
+				<h4>Sous-section 1 : Dans la même page</h4>
+				<p>
+					Une ancre est une sorte de point de repère que vous pouvez mettre dans vos pages HTML lorsqu'elles sont très longues.
+					En effet, il peut alors être utile de faire un lien amenant plus bas dans la même page pour que le visiteur puisse sauter directement à la partie qui l'intéresse.
+				</p>
+				<p>
+					Pour créer une ancre, il suffit de rajouter l'attribut id à une balise qui va alors servir de repère. Ce peut être n'importe quelle balise, un titre par exemple.
+					Utilisez l'attribut id pour donner un nom à l'ancre. Cela nous servira ensuite pour faire un lien vers cette ancre. Par exemple :
+				</p>
+				<img src="Images/ancreex1.png" alt="ancre1" title="Premier exemple d'ancre"/>
+				<p>
+					Ici un exemple concret sur une page :
+				</p>
+				<img src="Images/ancreex2.png" alt="ancre2" title="Second exemple d'ancre"/>
+				<h4>Sous-section 2 : Dans une autre page</h4>
+				<img src="Images/ancreex3.png" alt="ancre3" title="Troisieme exemple d'ancre"/>
+			</article>
+			<article>
+				<h3>Section 4 - Cas pratiques d'utilisation des liens</h3>
+				<h4>Sous-section 1 : Un lien qui affiche une infobulle au survol</h4>
+				<p>
+					Vous pouvez utiliser l'attribut title qui affiche une bulle d'aide lorsqu'on pointe sur le lien. Cet attribut est facultatif.
+				</p>
+				<p>
+					<img src="Images/titleattribute.png" alt="title" title="Attribut title sur une ancre"/>
+				</p>
+				<h4>Sous-section 2 : Un lien qui ouvre une nouvelle fenêtre</h4>
+				<p>
+					<img src="Images/newWindow.png" alt="nouvelleFenetre" title="Ouvrir un lien dans une nouvelle fenêtre"/>
+				</p>
+				<h4>Sous-section 3 : Un lien pour envoyer un e-mail</h4>
+				<p>
+					<img src="Images/mailto.png" alt="envoyerMail" title="envoyer un mail"/>
+				</p>
+				<h4>Sous-section 4 : Un lien pour télécharger un fichier</h4>
+				<p>
+					<img src="Images/downloadFile.png" alt="telechargerFichier" title="Télécharger un fichier"/>
+				</p>
+			</article>
+
+		</section>
+
+		<footer>
+		<p class="centerP">
+			<a href="maito:l_m1@orange.fr">Courriel</a> Téléphone : 06 45 28 14 94 Adresse : 239, lieu dit Rigou 46 090 Le Montat 
+		</p>
+		<p class="centerP">
+			<a href="">Mentions légales</a> Blackbird Production 2017
+		</p>
+	</footer>	
+	</body>
+</html>

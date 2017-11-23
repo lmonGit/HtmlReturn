@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Les tableaux</title>
+		<link rel="stylesheet" href="stylesheet.css" />
+	</head>
+	<body>
+		<header>
+			<img src="Images/htmlAnimated.gif" border="0" alt="" width="100" height="100">
+			<h1 class="disp1H1">Les tableaux</h1>
+			<img src="Images/search.png" alt="loupe" title="Rechercher" width="32" height="32"/>
+			<p class="disp1p">
+				Recherche
+			</p>
+			<img src="Images/loginButton.png" alt="connexion" title="Se connecter" width="40" height="40"/>
+			<p class="disp1p">
+				Connexion
+			</p>
+
+		</header>
+		<nav class="dispNav">
+			<ol class="dispUl1">
+				<li>
+					<a href="index.html">Accueil</a>
+				</li>
+				<li>
+					<a href="fonctionnement.html">Les fondations</a>
+				</li>
+				<li>
+					<a href="premierePage.html">Première page</a>
+				</li>
+				<li>
+					<a href="organiserTexte.html">Le texte</a>
+				</li>
+				<li>
+					<a href="liens.html">Les liens</a>
+				</li>
+				<li>
+					<a href="images.html">Les images</a>
+				</li>
+				<li>
+					<a href="structure.html">La structure</a>
+				</li>
+				<li>
+					<a href="tableau.html">Les tableaux</a>
+				</li>
+			</ol>
+		</nav>
+		<section>
+			<h2 id="Structure">Chapitre 7 - Les tableaux</h2>
+			<article>
+				<p>
+					<span style="color:orange">!!! AVERTISSEMENT !!!</span> Il sera plus profitable de n'introduire dans ce pseudo-site sur HTML que le code d'une application des notions
+					tirées du livre de Mathieu Nebra car reprendre intégralement son cours pourrait introduire des erreurs. Dorénavant, je ne présenterai que le code servant d'application
+					des notions présentées. Le code sera commenté de manière précise mais il ne faudra pas oublier que si la fourniture de mon code avait lieu
+					un jour, les commentaires ne sont pas nécessaires. Les commentaires permettront d'ancrer en situation réelle les notions abordées.
+				</p>
+				<h3>Section 1 - Un tableau simple</h3>
+				<p>
+					<span style="color:yellow">!!! Clic droit dans le navigateur + afficher le code source pour voir mon code HTML !!!</span> Voir code CSS dans stylesheet.css du projet avec
+					les balises qui correspondent au sujet en cours.
+				</p>
+				<!--<div style="text-align:left">
+					<img class="imgDisplayed1" src="Images/BalisesStructurantes2.png" alt="Balisesstructuantes2" title="Les balises structurantes 2" />
+				</div> -->
+				<p>
+					Construction d'un tableau simple
+				</p>
+				<!-- Pour créer un tableau on utilise la balise <table> ... </table>   -->
+				<table>
+					<!-- On donne un titre au tableau avec la balise <caption> ... </caption>  -->
+					<!-- le titre peut être placé en bas ou en haut avec caption-side dans le fichier css-->
+					<caption class="toTheBottom">Un exemple de tableau simple</caption>
+					<!-- le tableau est ensuite créer ligne par ligne avec la balise <tr> ... </tr>  tr comme table row -->
+					<tr>
+					<!-- la première ligne est particulière c'est la ligne d'en tête ou se place les titres des colonnes -->
+						<th>Nom</th>
+						<th>Age</th>
+						<th>Pays</th>
+						<th>Loisirs</th>
+					</tr>
+					<!-- Les autres lignes sont des lignes de données assimilables aux lignes des bases de données -->
+					<!-- première ligne de données avec 4 colonnes -->
+					<tr>
+						<td>Carmen</td>
+						<td>33 ans</td>
+						<td>Italie</td>
+						<td>Chant</td>
+					</tr>
+
+					<tr>
+						<td>Adam</td>
+						<td>24 ans</td>
+						<td>Ecosse</td>
+						<td>Economie</td>
+					</tr>
+
+					<tr>
+						<td>Richard</td>
+						<td>45 ans</td>
+						<td>USA</td>
+						<td>Informatique</td>
+					</tr>
+
+					<tr>
+						<td>Brice</td>
+						<td>23 ans</td>
+						<td>France</td>
+						<td>Surf</td>
+					</tr>
+
+				</table>
+			</article>
+
+			<article>
+				<h3>Section 2 - Un tableau structuré</h3>
+				<p>Pour écrire un tableau structuré il faut écrire les balises dans cet ordre<br/>
+					<ol>
+						<li> &lsaquo; thead &rsaquo; </li>
+						<li> &lsaquo; tfoot &rsaquo; </li>
+						<li> &lsaquo; tbody &rsaquo; </li>
+					</ol>
+				</p>
+				<p>
+					Exemple d'un tableau structuré de gestion des animaux chez un vétérinaire
+					<table>
+						<caption>Gestion des animaux de la clinique</caption>
+						<!-- En-tête du tableau -->
+						<thead>
+							<th>Espèce</th>
+							<th>Sexe</th>
+							<th>Date Naissance</th>
+							<th>Nom</th>
+							<th>Commentaire</th>
+						</thead>
+						<!-- Pied du tableau -->
+						<tfoot>
+							<th>Espèce</th>
+							<th>Sexe</th>
+							<th>Date Naissance</th>
+							<th>Nom</th>
+							<th>Commentaire</th>
+						</tfoot>
+						<!-- Corps du tableau -->
+						<tbody>
+							<tr>
+								<td>Chat Angora</td><td>Mâle</td><td>16/08/2010</td><td>Cali</td><td>Etat fébrile</td>
+							</tr>
+							<tr>
+								<td>Truie de Bretagne</td><td>Femelle</td><td>02/03/2015</td><td>Margueritte</td><td>A vacciner</td>
+							</tr>
+							<tr>
+								<td>Cheval Connemara</td><td>Mâle</td><td>05/05/2011</td><td>Brasero</td><td>A préparer</td>
+							</tr>
+							<tr>
+								<td>Canari Bleu des îles</td><td>Mâle</td><td>07/02/2009</td><td>Titi</td><td>A baguer</td>
+							</tr>
+							<tr>
+								<td>Chat Persan</td><td>Mâle</td><td>12/05/2011</td><td>Luigi</td><td>Extraction dent abîmée</td>
+							</tr>
+						</tbody>
+					</table>
+					<p style="color:green">
+						Ces trois balises tbody, tfoot, thead ne sont utilisées que dans le cadre des tableaux de grande tailles.
+					</p>
+
+			</article>
+			<article>
+				<h3>Section 3 - 3,2,1 ... fusion</h3>
+					<h4>Fusion de deux cellules horizontalement :  &lsaquo; td &rsaquo;  colspan="" </h4>
+
+					<table>
+					   <tr>
+					       <th>Titre du film</th>
+					       <th>Pour enfants ?</th>
+					       <th>Pour adolescents ?</th>
+					   </tr>
+					   <tr>
+					       <td>Massacre à la tronçonneuse</td>
+					       <td >Non, trop violent</td>
+					       <td>Oui</td>
+					   </tr>
+					   <tr>
+					       <td>Les bisounours font du ski</td>
+					       <td>Oui, adapté</td>
+					       <td>Pas assez violent...</td>
+					   </tr>
+					   <tr>
+					       <td>Lucky Luke, seul contre tous</td>
+					       <td colspan="2">Pour toute la famille !</td>
+					   </tr>
+					</table>
+
+
+					<h4>Fusion de deux cellules verticalement :  &lsaquo; td &rsaquo;  rowspan="" </h4>
+
+					<table>
+				   <tr>
+				       <th>Titre du film</th>
+				       <td>Massacre à la tronçonneuse</td>
+				       <td>Les bisounours font du ski</td>
+				       <td>Lucky Luke, seul contre tous</td>
+				   </tr>
+				   <tr>
+				       <th>Pour enfants ?</th>
+				       <td>Non, trop violent</td>
+				       <td>Oui, adapté</td>
+				       <td rowspan="2">Pour toute la famille !</td>
+				   </tr>
+				   <tr>
+				       <th>Pour adolescents ?</th>
+				       <td>Oui</td>
+				       <td>Pas assez violent...</td>
+				   </tr>
+				</table>
+
+				<table>
+				<caption>Mes pôles de consommation principaux</caption>
+				<tr>
+					<th></th>
+					<th>Trimestre 1</th>
+					<th>Trimestre 2</th>
+					<th>Trimestre 3</th>
+					<th>Trimestre 4</th>
+				</tr>
+				<tr>
+						<th>Remboursement CAF</th>
+						<td colspan ="4">270 euros</td>
+				</tr>
+				 <tr>
+						 <th>Carburant</th>
+						 <td>380 euros</td>
+						 <td colspan ="3">360 euros</td>
+				 </tr>
+				 <tr>
+						 <th>FDJ</th>
+						 <td rowspan="3">60 euros</td>
+						 <td rowspan="2">45 euros</td>
+						 <td>0 euros</td>
+						 <td>12 euros</td>
+				 </tr>
+				 <tr>
+						 <th>Orange</th>
+						 <td>45 euros</td>
+						 <td colspan="2">60 euros</td>
+				 </tr>
+				 <tr>
+						 <th>Autoroute</th>
+						 <td>10 euros</td>
+						 <td>40 euros</td>
+						 <td>25 euros</td>
+				 </tr>
+			</table>
+
+
+			</article>
+		</section>
+		<footer>
+			<p class="centerP">
+				<a href="maito:l_m1@orange.fr">Courriel</a> Téléphone : 06 45 28 14 94 Adresse : 239, lieu dit Rigou 46 090 Le Montat
+			</p>
+			<p class="centerP">
+				<a href="">Mentions légales</a> Blackbird Production 2017
+			</p>
+		</footer>
+	</body>
+</html>
